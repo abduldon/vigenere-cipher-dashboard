@@ -42,10 +42,8 @@ ADMIN_PASSWORD=use-a-unique-strong-password
 FLASK_DEBUG=0
 ```
 
-## Deploying publicly
-This is a Flask server application; it cannot run directly inside Google Sites. Deploy the app to a Python-capable host first, then share its public URL. You can optionally embed that URL in a Google Sites page if the host allows iframe embedding. Use a persistent disk/volume for `database.db`, because ephemeral filesystems can erase SQLite history after redeployment/restart. Configure `SECRET_KEY` and a strong `ADMIN_PASSWORD`; do not publish the demo credentials for a public deployment.
-
-For a compatible host that runs the `Procfile`, the start command is `gunicorn app:app`. `DATABASE_URL` may be set to a SQLAlchemy database URL by the host; if it uses SQLite, ensure the database file lives on persistent storage.
+## Deploying link
+https://vigenere-cipher-dashboard.onrender.com/dashboard
 
 ## Algorithm
 Letters are mapped A=0 through Z=25.
